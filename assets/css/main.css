@@ -1,0 +1,657 @@
+.header {
+    position: relative;
+    height: 100vh;
+}
+
+.header-nav {
+    position: relative;
+    padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav-list-item {
+    padding: 1.2rem 2.4rem;
+}
+
+.header-nav__icon {
+    display: none;
+}
+
+.header-nav-list-item__link {
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: #4d4959;
+    font-weight: 700;
+}
+
+.header-nav-list-item:hover .header-nav-list-item__link {
+    opacity: 0.6;
+}
+
+.header-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.header-banner__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about {
+    padding: 11rem 0 14rem;
+}
+
+.feature__img {
+    margin: 0 auto 3rem;
+}
+
+.feature__heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    color: var(--color-heading);
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.about__desc {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 3.4rem;
+    color: var(--color-text);
+    margin: 0 auto;
+    max-width: 107rem;
+    font-weight: 400;
+    padding: 0 1.2rem;
+}
+
+.work-list-item {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+}
+
+.work-list-item-img {
+    width: 67%;
+    position: relative;
+}
+
+.work-list-item .img-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-list-item-img__brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.work-list-item-content {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.work-list-item-content-top {
+    background-color: white;
+    height: 67%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 7rem;
+}
+
+.work-list-item-content-top__text {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: var(--color-text);
+    max-height: 19rem;
+    font-weight: 400;
+    text-align: justify;
+    margin: 0 auto;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.work-list-item-content-bottom {
+    height: 33%;
+}
+
+.work-list-item:nth-of-type(2) .work-list-item-img {
+    order: 2;
+}
+
+.work-list-item:last-child > .work-list-item-img {
+    width: 33%;
+}
+
+.work-list-item:last-child > .work-list-item-content {
+    width: 34%;
+}
+
+.twitter {
+    padding: 6rem 0 4rem;
+    text-align: center;
+}
+
+.twitter-list-item__icon {
+    font-size: 2.6rem;
+    color: #56c7ee;
+    margin-bottom: 3rem;
+}
+
+.twitter-list-item__heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    color: var(--color-heading);
+}
+
+.twitter-list-item__heading--bland {
+    opacity: 0.4;
+}
+
+.twitter-list-item__text {
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    font-weight: 400;
+    max-width: 107rem;
+    margin: 0 auto 6rem;
+    padding: 0 1.2rem;
+}
+
+.twitter-list__item {
+    margin: 0 0.4rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid #a9afb3;
+    border-radius: 100%;
+}
+
+.twitter .twitter-list__item:first-child {
+    background-color: #a9afb3;
+}
+
+.twitter .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+}
+
+.twitter .slick-dots li {
+    margin: 0 0.25rem;
+}
+
+.twitter .slick-dots button {
+    display: block;
+    width: 1.1rem;
+    height: 1.1rem;
+    padding: 0;
+    border: 0.1rem solid #c8c8c8;
+    border-radius: 100%;
+    background-color: rgba(40, 47, 53, 0);
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.twitter .slick-dots li.slick-active button {
+    background-color: #a9afb3;
+}
+
+.images-list-item {
+    width: calc(100% / 3);
+    display: flex;
+    overflow: hidden;
+}
+
+.images-list-item .img-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.images-list {
+    display: flex;
+    align-items: center;
+}
+
+.images-list-item:nth-of-type(odd) {
+    flex-direction: column;
+}
+
+.images-list-item:last-child .images-list-item-top {
+    order: 2;
+}
+
+.images-list-item:nth-of-type(2) .images-list-item-top,
+.images-list-item:nth-of-type(2) .images-list-item-bottom {
+    width: 50%;
+}
+
+.images-list-item-top, .images-list-item-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.images-list-item-bottom {
+    position: relative;
+}
+
+.images-list-item-bottom:hover .images-list-item-bottom-brand {
+    display: flex;
+}
+
+.images-list-item-bottom-brand {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #71b495;
+    opacity: 0.8;
+}
+
+.images-list-item-bottom-brand__text {
+    margin-top: 1.2rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+}
+
+.images-list-item-top__img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.discover {
+    height: 20rem;
+    background-color: #263a41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover__btn {
+    display: inline-block;
+    padding: 1.2rem 3.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.discover__btn:hover, .mail-form__btn:hover,
+.footer-social-link:hover {
+    opacity: 0.6;
+}
+
+.mail {
+    padding: 6rem 0;
+}
+
+.mail__img {
+    margin: 0 auto 3rem;
+}
+
+.mail__heading {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    margin-bottom: 2.9rem;
+    text-align: center;
+    height: 3.3rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.mail-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail-form__input {
+    width: 40rem;
+    height: 6.9rem;
+    opacity: 0.502;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #929292;
+    font-weight: 400;
+    font-style: italic;
+    border: 1px solid #d3d7d9;
+    padding-left: 2rem;
+    margin-right: 1.2rem;
+}
+
+.mail-form__btn {
+    height: 6.9rem;
+    width: 12.6rem;
+    background-color: #64c29e;
+    border: none;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: var(--white);
+    font-weight: 300;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+    padding: 6rem;
+    height: 25rem;
+}
+
+.footer-address {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social-link__icon {
+    margin: 0 1rem;
+}
+
+.footer-author {
+    display: flex;
+    align-items: center;
+}
+
+.footer-author__name {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1199px) {
+    .feature {
+        padding: 6rem 0 9rem;
+    }
+
+    .feature__img {
+        margin: 0 auto 2rem;
+    }
+
+    .about__desc {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .feature__heading {
+        font-size: 1.6rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .work-list-item-content-top {
+        padding: 0 3rem;
+    }
+
+    .work-list-item-content-top__text {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    .twitter-list-item__text {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+    }
+
+    .mail-form__input {
+        width: 30rem;
+        height: 4.9rem;
+        font-size: 1.6rem;
+    }
+
+    .mail-form__btn {
+        width: 6.6rem;
+        height: 4.9rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .header {
+        height: 64vh;
+    }
+
+    .feature__img {
+        margin: 0.4rem auto 1rem;
+    }
+
+    .about__desc {
+        max-width: 83rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    .feature__heading {
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .work-list-item-content-top__text {
+        max-width: 90rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .twitter-list-item__text {
+        max-width: 83rem;
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+        height: 60vh;
+    }
+
+    .header-nav {
+        padding-top: 0;
+    }
+
+    .header-nav-list {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header-nav-list-item {
+        padding: 0.8rem 1.6rem;
+    }
+
+    .header-nav-list-item__link {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+        white-space: nowrap;
+        font-weight: 900;
+    }
+
+    .header-nav-list-item--logo {
+        display: none;
+    }
+
+    .header-nav__icon {
+        background: #ccc;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 1.4rem 1.6rem;
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: var(--white);
+    }
+
+    .feature {
+        padding: 4rem 0 6rem;
+    }
+
+    .feature__heading {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .about__desc {
+        max-width: 62rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .work-list-item-content-top__text {
+        max-height: 43%;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .work-list-item-img,
+    .work-list-item-content {
+        width: 50%;
+    }
+
+    .twitter-list-item__heading {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .twitter-list-item__text {
+        max-width: 62rem;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    .discover__btn {
+        padding: 1rem 2.8rem;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .work-list-item-content-top__text {
+        -webkit-line-clamp: 4;
+    }
+
+    .work-list-item:last-child .work-list-item-content-top__text {
+        -webkit-line-clamp: 2;
+        text-align: left;
+    }
+
+    .twitter-list-item__text {
+        max-width: 54rem;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .header {
+        height: 43vh;
+    }
+
+    .work-list-item-img, .work-list-item-content {
+        width: 100% !important;
+    }
+
+    .about__desc {
+        max-width: 42rem;
+    }
+
+    .work-list-item-content-top__text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .twitter-list-item__text {
+        max-width: 42rem;
+    }
+
+    .mail-form__input {
+        width: 25rem;
+        height: 3.9rem;
+        font-size: 1.2rem;
+    }
+
+    .mail-form__btn {
+        width: 4.6rem;
+        height: 3.9rem;
+        font-size: 1.4rem;
+    }
+
+    .footer {
+        padding: 1rem;
+    }
+
+    .footer-address {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+    .footer-social-link__icon {
+        width: 2rem;
+        margin: 0 0.2rem;
+    }
+
+    .footer-author__name {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin-right: 0.6rem;
+    }
+}
+

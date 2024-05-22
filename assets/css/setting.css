@@ -1,0 +1,37 @@
+:root {
+    --primary-color: #ff817e;
+    --white: white;
+    --black: black;
+    --bg-block: #fff9f8;
+    --color-text: #848789;
+    --color-heading: #353738;
+    --primary-font: "Lato", serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    color: var(--color-text);
+    background-color: var(--white);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
